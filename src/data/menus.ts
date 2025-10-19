@@ -1,7 +1,9 @@
 import {BugOutlined, FlagOutlined, InfoCircleOutlined, SecurityScanOutlined} from "@ant-design/icons-vue";
-import {ItemType} from "ant-design-vue";
+import type {MyMenu} from "@/types/menu";
+import {MyMenu2AntdItemType} from "@/types/menu";
+import type {ItemType} from "ant-design-vue";
 
-const menu: ItemType = [
+const menus: MyMenu[] = [
     {
         label: 'Vulnerability',
         key: 'vul',
@@ -28,4 +30,6 @@ const menu: ItemType = [
     }
 ];
 
-export {menu};
+const antdMenus: ItemType[] = menus.map(MyMenu2AntdItemType);
+
+export {menus, antdMenus};

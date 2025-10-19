@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import ImageWall from "../ImageWall.vue";
-import {menu} from "@/data/menu";
+import {menus} from "@/data/menus";
 import Desc from "@/components/index/Desc.vue";
 </script>
 
@@ -17,7 +17,7 @@ import Desc from "@/components/index/Desc.vue";
         </span>
       </a-row>
       <a-row>
-        <a-col v-for="item in menu" :key="'1' + item.key" :span="12" class="graph">
+        <a-col v-for="item in menus" :key="'1' + item.key" :span="12" class="graph">
           <Desc :menu="item"/>
         </a-col>
       </a-row>

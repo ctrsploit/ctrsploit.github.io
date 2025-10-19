@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import {ItemType} from "ant-design-vue";
+import type {MyMenu} from "@/types/menu";
 
 const props = defineProps<{
-  menu: ItemType,
+  menu: MyMenu,
 }>();
 </script>
 
