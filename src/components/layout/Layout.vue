@@ -23,7 +23,7 @@ const theme = inject<Theme>('theme', themes.blue);
   >
     <a-layout id="layout">
       <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
-        <router-link to="/" class="logo">CTRSploit Landscape</router-link>
+        <router-link to="/" class="logo">Ctrsploit Landscape</router-link>
         <div class="header-right">
           <Menu/>
           <ThemeSwitch/>

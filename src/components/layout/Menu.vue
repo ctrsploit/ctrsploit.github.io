@@ -1,32 +1,17 @@
 <script setup lang="ts">
 import {inject} from "vue";
-import { themes } from "@/theme";
-import type { Theme } from "@/theme";
+import {themes} from "@/theme";
+import type {Theme} from "@/theme";
 import {useRouter} from "vue-router";
+import {menu} from "@/data/menu"
+import {ItemType} from "ant-design-vue";
 
 const theme = inject<Theme>('theme', themes.blue);
 const router = useRouter()
-const go = (item: any) => {
+const go = (item: ItemType) => {
   router.push('/' + String(item?.key));
 }
-const menu = [
-  {
-    label: 'Vulnerability',
-    key: 'vul',
-  },
-  {
-    label: 'CheckSec',
-    key: 'checksec',
-  },
-  {
-    label: 'Env',
-    key: 'env',
-  },
-  {
-    label: 'Roadmap',
-    key: 'roadmap',
-  }
-];
+
 </script>
 
 <template>
@@ -44,12 +29,16 @@ const menu = [
             },
           }"
   >
-    <a-menu
-        class="menu"
-        @click="go"
-        mode="horizontal"
-        :items="menu"
-    />
+    <a-menu class="menu" mode="horizontal">
+      <a-menu-item
+          v-for="item in menu"
+          :key="item.key"
+          @click="() => go(item)"
+      >
+        <component :is="item.icon" style="margin-right:8px;"/>
+        {{ item.label }}
+      </a-menu-item>
+    </a-menu>
   </a-config-provider>
 </template>
 

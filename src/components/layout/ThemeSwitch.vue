@@ -15,8 +15,8 @@ const toggleTheme = function () {
     themeLink.rel = 'stylesheet';
     document.head.appendChild(themeLink);
   }
-  themeLink.href = mode.value ? `/assets/style/blue.css` : `/assets/style/pink.css`;
-  theme.value = mode.value ? themes.blue : themes.pink;
+  themeLink.href = mode.value ? `/assets/style/pink.css` : `/assets/style/blue.css`;
+  theme.value = mode.value ? themes.pink : themes.blue;
 }
 
 onMounted(() => {

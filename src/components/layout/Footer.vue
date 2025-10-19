@@ -13,11 +13,10 @@ import {version} from "@/components/version.ts";
     >
       <a-layout-footer class="footer">
         <span style="font-weight: bold; font-size: large">ctrsploit</span>
-        <br><br>
-        <p>
-          {{ version.time }}
-        </p>
+        <br>
         {{ version.version }}
+        <br>
+        <span>compiled at: {{ version.time }}</span>
       </a-layout-footer>
     </a-config-provider>
   </div>
