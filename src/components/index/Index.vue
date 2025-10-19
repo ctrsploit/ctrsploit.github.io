@@ -13,7 +13,9 @@ import Desc from "@/components/index/Desc.vue";
         <span class="title">
           <span>Ctrsploit Landscape</span>
           &emsp;
-          <a target="_blank" href="https://github.com/ctrsploit/ctrsploit/releases">releases</a>
+          <a href="https://github.com/ctrsploit/ctrsploit/releases"
+             style="font-size: 20px"
+             target="_blank">releases</a>
         </span>
       </a-row>
       <a-row>
