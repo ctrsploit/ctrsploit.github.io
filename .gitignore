@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+tsconfig.tsbuildinfo
+
+# Ignore generated Vue SFC stub files (produced by vue-tsc / tooling)
+src/**/*.vue.d.ts
+src/**/*.vue.js
+
+# Ignore generated declaration output directory
+/types

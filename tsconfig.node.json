@@ -12,7 +12,11 @@
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
+
+    /* Enable composite so project references can include this */
+    "composite": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
 
     /* Linting */
     "strict": true,

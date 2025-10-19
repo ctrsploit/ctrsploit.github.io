@@ -1,30 +1,24 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Layout from "@/components/layout/Layout.vue";
+import {themes} from "@/theme.ts";
+import {provide} from "vue";
+
+provide('theme', themes.blue);
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="app">
+    <Layout/>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+* {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEVklEQVRIibWXX0xTVxzHP8e4h5n0ClmyzGIWkslKzYxzqdw9LLHdyh7MgoyHGVMWaFgWYlYXHlg2lkwkY2J8GIM9kGVOfPBhvjiN0weNrf8eau4oe1EQHcSU1iw19M+CD5j89tB7L6W0BRR/T6e//s45n/v7nvM754BpIuIVkbCIzEneYiJyUkS8vEBT5uSHgd54PMGVK2ESswnq3S4aGjxs3eoESAMR4BwQUUrNrBuAiNQC06Ojp/mh//iyALfbhd/vo0H3oOseyz1uASmlIs8LcDYeTzS/79u7YnBNjRNd9+Bv9NHQ4EHTHJDPzh/ANZ4hO0pE5oaHRqqGh0cAeLnuVbb4dpMyYmTHEhU767qHD/w+9Hc9uOtdljvColTjKwFsBKqy2Zzt2OLbzY7uQwDMJ5KkjBjJ8HVSN+/zNJ1b0jkaNYhGDWAxOx+3NHl13eMFEJGZIqB0qQxMX7kcrj14sMt2ei/8zGZX3TLalBHj4fmLpIwJnkz9W/arNM1hZ6dgIWPCnFJKjRYC9AKH9zXt5+7dSQBe2fMm7/06XHYCgMzkFCljjGT4Jo+v3asY63a7FuXKL+RRpVTQAqgCYtGoUftp62d2p7d6O3gj8EnFgS1byOVMqW6smJ329gA933YDDCqluqw64AXC/d8f59Sp0wBsrHLgOzfEJqez7GDlbBGm9EIOhToJHeoEqFaWU0QGs9ncl8379hOP5zutRoqVzFrID89fsqXSNAfGXzcAghsKYns1zTFzdKDPdjy+do8Hp888F8Am5xZeb9rLju6Q7SvcdTaAuUWCuu6hrS1gB0wMnmE+UbkeVLKFXI6JkRPcbO2xfdu32zUjrYo7rJcUKSPGxMhvJXfIwLE+WlqaZoBdpQCqgOlo1Kha667ITE6RDF/nwYlLy4oW5LUPhTppaw8AdCmlBpcBmBDNwNniXfHh1ZO85HCUnHw+keDynmDJ/6wa0NLSZJ0fXUqpQTCP4zIQZ7PZXHOhFK999A76j0dLxqeMGLcOfL3ka9vaAoWnaBr4ifz+T1txGyhvQU1zpHt6um3HowtjJMPXSwZnJhe1bmz0cTV8kdChTnTdEwF8SqlqpVRv8XlQFsAMPOJv9OH3+2z/2FdDLOSW6zufeGS36+tdVqqrlVK+SneGShnA1CkycKzPGpCn6RwTIyeXxWYm79ttM3a81Om3JgDTgprmSH8R6rQd//zyJyljbEnQQu4/u13vdkFe8xVtRQDzhnOkvT1QeCVj7LulUhTWfG2zA+DvdQEwIQYpkuLJVNKWYj6RXBJv3o5m1g3AtGBNjbOkFJnJKdtXUGbXF6CcFLcOfMPtz/vt3/WLd8PxVY27WgDLRCQ8O5vw7mvav+RUg/zqP3f+d2pqnONKqV1rHXu1ALUiMhePz0proEPqtu2Uum07pTXQIXfuTIj5sqp9IZMXQUyLiGQyWclksuZrTqZF5O21jLVmCYpAmgFrwsizvJL+B2DYESrNSYpvAAAAAElFTkSuQmCC) 2 6, none !important;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+html, body {
+  line-height: 1.5;
+  background-color: var(--colorBgBody);
 }
 </style>

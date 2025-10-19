@@ -6,10 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean:generated": "find src -type f \\( -name '*.vue.d.ts' -o -name '*.vue.js' -o -name '*.d.ts' -o -name '*.js' \\) -maxdepth 4 -print0 | xargs -0 rm -f || true"
   },
   "dependencies": {
-    "vue": "^3.5.22"
+    "ant-design-vue": "^4.2.6",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
     "@types/node": "^24.6.0",
