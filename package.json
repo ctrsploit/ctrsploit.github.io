@@ -10,12 +10,15 @@
     "clean:generated": "find src -type f \\( -name '*.vue.d.ts' -o -name '*.vue.js' -o -name '*.d.ts' -o -name '*.js' \\) -maxdepth 4 -print0 | xargs -0 rm -f || true"
   },
   "dependencies": {
-    "ant-design-vue": "^4.2.6",
     "@ant-design/icons-vue": "^7.0.0",
+    "ant-design-vue": "^4.2.6",
+    "markdown-it-emoji": "^3.0.0",
+    "unplugin-vue-markdown": "^29.2.0",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
+    "@types/markdown-it-emoji": "^3.0.1",
     "@types/node": "^24.6.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
