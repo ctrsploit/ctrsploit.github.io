@@ -16,6 +16,13 @@ import Desc from "@/components/index/Desc.vue";
           <a href="https://github.com/ctrsploit/ctrsploit/releases"
              style="font-size: 20px"
              target="_blank">releases</a>
+
+          <a href="https://github.com/ctrsploit/ctrsploit"
+             style="font-size: 20px; margin-left: 10px"
+             target="_blank">src(ctrsploit)</a>
+          <a href="https://github.com/ctrsploit/ctrsploit.github.io"
+             style="font-size: 20px; margin-left: 10px"
+             target="_blank">src(ctrsploit.github.io)</a>
         </span>
       </a-row>
       <a-row>
