@@ -1,4 +1,10 @@
-import {BugOutlined, FlagOutlined, InfoCircleOutlined, SecurityScanOutlined} from "@ant-design/icons-vue";
+import {
+    BugOutlined,
+    FlagOutlined,
+    InfoCircleOutlined,
+    RadarChartOutlined,
+    SecurityScanOutlined
+} from "@ant-design/icons-vue";
 import type {MyMenu} from "@/types/menu";
 import {MyMenu2AntdItemType} from "@/types/menu";
 import type {ItemType} from "ant-design-vue";
@@ -21,6 +27,12 @@ const menus: MyMenu[] = [
         key: 'env',
         icon: InfoCircleOutlined,
         description: 'collect environment information'
+    },
+    {
+        label: 'Benchmark',
+        key: 'benchmark',
+        icon: RadarChartOutlined,
+        description: 'ctrsploit vs similar tools'
     },
     {
         label: 'Roadmap',
