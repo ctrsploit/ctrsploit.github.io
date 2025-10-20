@@ -8,5 +8,8 @@ import Markdown from "@/components/markdown/Markdown.vue";
 </template>
 
 <style scoped>
-
+::v-deep(th:first-child),
+::v-deep(td:first-child) {
+  white-space: nowrap;
+}
 </style>
