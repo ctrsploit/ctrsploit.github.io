@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vue-tsc -b && vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "clean:generated": "find src -type f \\( -name '*.vue.d.ts' -o -name '*.vue.js' -o -name '*.d.ts' -o -name '*.js' \\) -maxdepth 4 -print0 | xargs -0 rm -f || true"
   },
