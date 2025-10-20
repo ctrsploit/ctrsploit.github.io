@@ -7,7 +7,7 @@ import Desc from "@/components/index/Desc.vue";
 
 <template>
   <div class="container">
-    <ImageWall image="/assets/ctrsploit-cyber.png" height="400px" background-color="#211e32"/>
+    <ImageWall image="/assets/ctrsploit-cyber.png" height="360px" background-color="#211e32"/>
     <div class="content">
       <a-row>
         <span class="title">

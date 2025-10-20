@@ -5,7 +5,7 @@ import ImageWall from "@/components/ImageWall.vue";
 
 <template>
   <div class="container">
-    <ImageWall image="/assets/ctrsploit-todo-cyber.png" height="400px" background-color="#211e32"/>
+    <ImageWall image="/assets/ctrsploit-todo-cyber.png" height="360px" background-color="#211e32"/>
   </div>
   <div class="content">
     <h1>Todo</h1>
